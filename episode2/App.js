@@ -31,6 +31,15 @@ const Title = () => (
     This is Namaste React Course🚀
   </h1>
 );
+//REACT Element
+const elem = <span>React Element</span>;
+
+const title2 = (
+  <h1 className="head" tableIndex="1">
+    {elem}
+    This is Namaste React Course🚀.
+  </h1>
+);
 // const root = ReactDom.createRoot(document.getElementById("root"));
 // root.render(heading);
 // root.render(jsxHeading);
@@ -58,10 +67,17 @@ const fn2 = () => true;
 
 //  nested jsx
 //Component Compositions
+const number = 10000;
 const HeadingComponent2 = () => (
   <div id="container">
     <Title />
-    <h1 className="heading">This is Funtional React Componnents </h1>
+    <h2>{number}</h2>
+    {title2}    {/*----->react Element*/}
+    {/* 
+    <Title />
+    <Title></Title> */}
+    {Title()}
+    <h1 className="heading">This is Funtional React Components </h1>
   </div>
 );
 
